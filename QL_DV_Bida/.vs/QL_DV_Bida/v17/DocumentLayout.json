@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|d:\\source_code\\c#\\do_an_windownform\\ql_dv_bida\\ql_dv_bida\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|solutionrelative:ql_dv_bida\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|d:\\source_code\\c#\\do_an_windownform\\ql_dv_bida\\ql_dv_bida\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|solutionrelative:ql_dv_bida\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|d:\\source_code\\c#\\do_an_windownform\\ql_dv_bida\\ql_dv_bida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A72CD486-BFBB-4FDF-8006-0A1E8E430B68}|QL_DV_Bida\\QL_DV_Bida.csproj|solutionrelative:ql_dv_bida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 482,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmDangNhap.cs",
+              "DocumentMoniker": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "QL_DV_Bida\\frmDangNhap.cs",
+              "ToolTip": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\frmDangNhap.cs",
+              "RelativeToolTip": "QL_DV_Bida\\frmDangNhap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:12:35.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "QL_DV_Bida\\frmDangNhap.cs",
+              "ToolTip": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\frmDangNhap.cs [Design]",
+              "RelativeToolTip": "QL_DV_Bida\\frmDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:06:41.287Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\Program.cs",
+              "RelativeDocumentMoniker": "QL_DV_Bida\\Program.cs",
+              "ToolTip": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\Program.cs",
+              "RelativeToolTip": "QL_DV_Bida\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:05:32.212Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 199,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
