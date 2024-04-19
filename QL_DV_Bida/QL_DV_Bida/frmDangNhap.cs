@@ -1,4 +1,6 @@
-﻿namespace QL_DV_Bida
+﻿using QL_DV_Bida.Class;
+
+namespace QL_DV_Bida
 {
     public partial class frmDangNhap : Form
     {
@@ -9,7 +11,9 @@
         private void link_QuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmQuenMatKhau quenMatKhau = new frmQuenMatKhau();
+            this.Hide();
             quenMatKhau.ShowDialog();
+            this.Show();
         }
         Modify modify = new Modify();
         private void frmDangNhap_Load(object sender, EventArgs e)
@@ -30,7 +34,9 @@
                 {
                     MessageBox.Show("Dang nhap thanh cong!", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmHome frmHome = new frmHome();
+                    this.Hide();
                     frmHome.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
@@ -38,11 +44,25 @@
                 }
             }
         }
-
         private void link_DangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmDangKi dangKi = new frmDangKi();
+            this.Hide();
             dangKi.ShowDialog();
+            this.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban co that su muon thoat chuong trinh?", "Thong bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

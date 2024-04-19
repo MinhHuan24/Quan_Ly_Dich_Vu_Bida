@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QL_DV_Bida.Class;
 
 namespace QL_DV_Bida
 {
@@ -65,6 +66,19 @@ namespace QL_DV_Bida
         private void frmQuenMatKhau_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmQuenMatKhau_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban co that su muon thoat chuong trinh?", "Thong bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

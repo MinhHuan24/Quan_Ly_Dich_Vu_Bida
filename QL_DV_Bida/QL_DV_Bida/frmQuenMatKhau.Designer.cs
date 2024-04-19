@@ -33,6 +33,7 @@
             label2 = new Label();
             btnLayLaiMatKhau = new Button();
             image1 = new PictureBox();
+            btnExit = new Button();
             ((System.ComponentModel.ISupportInitialize)image1).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // txtEmailDangKy
             // 
             txtEmailDangKy.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            txtEmailDangKy.Location = new Point(165, 500);
+            txtEmailDangKy.Location = new Point(207, 455);
             txtEmailDangKy.Margin = new Padding(3, 4, 3, 4);
             txtEmailDangKy.Name = "txtEmailDangKy";
             txtEmailDangKy.Size = new Size(296, 38);
@@ -63,7 +64,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label2.Location = new Point(58, 588);
+            label2.Location = new Point(58, 540);
             label2.Name = "label2";
             label2.Size = new Size(90, 26);
             label2.TabIndex = 2;
@@ -99,12 +100,23 @@
             image1.UseWaitCursor = true;
             image1.Click += pictureBox1_Click;
             // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(338, 617);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(94, 29);
+            btnExit.TabIndex = 5;
+            btnExit.Text = "Thoát";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
             // frmQuenMatKhau
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(532, 866);
+            ClientSize = new Size(532, 693);
+            Controls.Add(btnExit);
             Controls.Add(image1);
             Controls.Add(btnLayLaiMatKhau);
             Controls.Add(label2);
@@ -112,8 +124,10 @@
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmQuenMatKhau";
-            Text = "Quên mặt khẩu";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Quên mật khẩu";
             UseWaitCursor = true;
+            FormClosing += frmQuenMatKhau_FormClosing;
             Load += frmQuenMatKhau_Load;
             ((System.ComponentModel.ISupportInitialize)image1).EndInit();
             ResumeLayout(false);
@@ -127,6 +141,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLayLaiMatKhau;
         private System.Windows.Forms.PictureBox image1;
+        private Button btnExit;
     }
 }
 

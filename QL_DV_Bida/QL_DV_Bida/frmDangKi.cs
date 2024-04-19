@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+ï»¿using System.Text.RegularExpressions;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QL_DV_Bida.Class;
 
 
 namespace QL_DV_Bida
@@ -24,13 +25,10 @@ namespace QL_DV_Bida
         }
         public bool CheckEmail(string em)
         {
-            return Regex.IsMatch(em,@"^[a-zA-Z0-9_]{3,20}@gmail.com(.vn|)$");
+            return Regex.IsMatch(em, @"^[a-zA-Z0-9_]{3,20}@gmail.com(.vn|)$");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
+
         Modify modify = new Modify();
         private void btndangky_Click(object sender, EventArgs e)
         {
@@ -38,26 +36,38 @@ namespace QL_DV_Bida
             string matkhau = txtmatkhau.Text;
             string xnmatkhau = txtxacnhanmatkhau.Text;
             string email = txtemail.Text;
-            if (!checkAccount(tentk)) { MessageBox.Show("Vui lòng nhap tên tài khoan dài 6-24 kı tu, voi các kı tu chu và su, chu hoa và chu thuong! "); return; }
-            if (!checkAccount(matkhau)) { MessageBox.Show("Vui lòng nh?p tên m?t kh?u dài 6-24 kı t?, v?i các kı t? ch? và s?, ch?u hoa và ch? th??ng! "); return; }
-            if (xnmatkhau != matkhau) { MessageBox.Show("Vui lòng xác nh?n m?t kh?u chính xác!"); return; }
-            if (!CheckEmail(email)) { MessageBox.Show("Vui lòng nh?p ?úng ??nh d?ng email!"); return; }
+            if (!checkAccount(tentk)) { MessageBox.Show("Vui lÃ²ng nhap tÃªn tÃ i khoan dÃ i 6-24 kÃ½ tu, voi cÃ¡c kÃ½ tu chu vÃ  su, chu hoa vÃ  chu thuong! "); return; }
+            if (!checkAccount(matkhau)) { MessageBox.Show("Vui lÃ²ng nháº­p tÃªn máº­t kháº©u dÃ i 6-24 kÃ½ t?, v?i cÃ¡c kÃ½ t? ch? vÃ  s?, ch?u hoa vÃ  ch? th??ng! "); return; }
+            if (xnmatkhau != matkhau) { MessageBox.Show("Vui lÃ²ng xÃ¡c nháº­n máº­t kháº©u chÃ­nh xÃ¡c!"); return; }
+            if (!CheckEmail(email)) { MessageBox.Show("Vui lÃ²ng nháº­p Ä‘Ãºng Ä‘á»‹nh dáº¡ng email!"); return; }
             if ((modify.TaiKhoans("select * from TaiKhoan where email = '" + email + "'").Count != 0))
-                { MessageBox.Show("Email này ?ã ???c ??ng kı, vui lòng ??ng kı email khác"); return; }
+            { MessageBox.Show("Email nÃ y Ä‘Ã£ Ä‘Æ°á»£c Ä‘Äƒng kÃ½, vui lÃ²ng Ä‘Äƒng kÃ½ email khÃ¡c"); return; }
             try
-                {
+            {
                 string query = "Insert into TaiKhoan values ('" + tentk + "','" + matkhau + "','" + email + "')";
-                    modify.Command(query);
-                    if (MessageBox.Show("??ng kı thành công! B?n óc mu?n ??ng nh?p luôn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                    {
-                        this.Close();
-                    }
-                }
-                catch
+                modify.Command(query);
+                if (MessageBox.Show("ÄÄƒng kÃ½ thÃ nh cÃ´ng! Báº¡n cÃ³ muá»‘n Ä‘Äƒng nháº­p luÃ´n khÃ´ng?", "ThÃ´ng bÃ¡o", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Tên tài kho?n này ?ã ???c ??ng kı!, vui lòng ??ng kı tên tài kho?n khác!");
+                    this.Close();
                 }
+            }
+            catch
+            {
+                MessageBox.Show("TÃªn tÃ i khoáº£n nÃ y Ä‘Ã£ Ä‘Æ°á»£c Ä‘Äƒng kÃ½!, vui lÃ²ng Ä‘Äƒng kÃ½ tÃªn tÃ i khoáº£n khÃ¡c!");
+            }
         }
-       
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmDangKi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban co that su muon thoat chuong trinh?", "Thong bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

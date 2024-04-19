@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            image_DangKi = new PictureBox();
             txttaikhoan = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -38,17 +38,19 @@
             label4 = new Label();
             txtemail = new TextBox();
             btndangky = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            btnExit = new Button();
+            ((System.ComponentModel.ISupportInitialize)image_DangKi).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // image_DangKi
             // 
-            pictureBox1.Location = new Point(132, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(244, 172);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            image_DangKi.Image = Properties.Resources.DangKi;
+            image_DangKi.Location = new Point(132, 12);
+            image_DangKi.Name = "image_DangKi";
+            image_DangKi.Size = new Size(244, 172);
+            image_DangKi.SizeMode = PictureBoxSizeMode.StretchImage;
+            image_DangKi.TabIndex = 0;
+            image_DangKi.TabStop = false;
             // 
             // txttaikhoan
             // 
@@ -122,7 +124,7 @@
             // 
             btndangky.BackColor = SystemColors.ActiveBorder;
             btndangky.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btndangky.Location = new Point(159, 438);
+            btndangky.Location = new Point(73, 459);
             btndangky.Name = "btndangky";
             btndangky.Size = new Size(150, 41);
             btndangky.TabIndex = 12;
@@ -130,11 +132,24 @@
             btndangky.UseVisualStyleBackColor = false;
             btndangky.Click += btndangky_Click;
             // 
+            // btnExit
+            // 
+            btnExit.BackColor = SystemColors.ActiveBorder;
+            btnExit.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnExit.Location = new Point(287, 459);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(150, 41);
+            btnExit.TabIndex = 13;
+            btnExit.Text = "Thoat";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
+            // 
             // frmDangKi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(532, 693);
+            Controls.Add(btnExit);
             Controls.Add(btndangky);
             Controls.Add(label4);
             Controls.Add(txtemail);
@@ -144,18 +159,19 @@
             Controls.Add(txtmatkhau);
             Controls.Add(label1);
             Controls.Add(txttaikhoan);
-            Controls.Add(pictureBox1);
+            Controls.Add(image_DangKi);
             Name = "frmDangKi";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Đăng ký";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            FormClosing += frmDangKi_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)image_DangKi).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox image_DangKi;
         private TextBox txttaikhoan;
         private Label label1;
         private Label label2;
@@ -165,5 +181,6 @@
         private Label label4;
         private TextBox txtemail;
         private Button btndangky;
+        private Button btnExit;
     }
 }
