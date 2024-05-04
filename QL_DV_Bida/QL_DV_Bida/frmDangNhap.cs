@@ -10,9 +10,9 @@ namespace QL_DV_Bida
         }
         private void link_QuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmQuenMatKhau quenMatKhau = new frmQuenMatKhau();
+            frmQuenMatKhau frmQuenMatKhau = new frmQuenMatKhau();
             this.Hide();
-            quenMatKhau.ShowDialog();
+            frmQuenMatKhau.ShowDialog();
             this.Show();
         }
         Modify modify = new Modify();
@@ -33,9 +33,9 @@ namespace QL_DV_Bida
                 if (modify.TaiKhoans(query).Count != 0)
                 {
                     MessageBox.Show("Dang nhap thanh cong!", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    frmHome frmHome = new frmHome();
+                    frmTrangChu trangChu = new frmTrangChu();
                     this.Hide();
-                    frmHome.ShowDialog();
+                    trangChu.ShowDialog();
                     this.Show();
                 }
                 else
@@ -56,7 +56,6 @@ namespace QL_DV_Bida
         {
             Application.Exit();
         }
-
         private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Ban co that su muon thoat chuong trinh?", "Thong bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)

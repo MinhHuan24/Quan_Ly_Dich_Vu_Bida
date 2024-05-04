@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QL_DV_Bida.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QL_DV_Bida.Class;
 
 namespace QL_DV_Bida
 {
@@ -29,7 +29,7 @@ namespace QL_DV_Bida
             else
             {
                 string query = "Select * from Taikhoan where Email = '" + email + "'";
-                if (modify.TaiKhoans(query).Count != 0)
+                if (modify.TaiKhoans(query).Count!=0)
                 {
                     label2.ForeColor = Color.Blue;
                     label2.Text = "Mật khẩu: " + modify.TaiKhoans(query)[0].MatKhau;
@@ -42,43 +42,9 @@ namespace QL_DV_Bida
             }
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmQuenMatKhau_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void frmQuenMatKhau_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Ban co that su muon thoat chuong trinh?", "Thong bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -164,6 +164,7 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "Đăng ký";
             FormClosing += frmDangKi_FormClosing;
+            Load += frmDangKi_Load;
             ((System.ComponentModel.ISupportInitialize)image_DangKi).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -36,8 +36,8 @@ namespace QL_DV_Bida
             string matkhau = txtmatkhau.Text;
             string xnmatkhau = txtxacnhanmatkhau.Text;
             string email = txtemail.Text;
-            if (!checkAccount(tentk)) { MessageBox.Show("Vui lòng nhap tên tài khoan dài 6-24 ký tu, voi các ký tu chu và su, chu hoa và chu thuong! "); return; }
-            if (!checkAccount(matkhau)) { MessageBox.Show("Vui lòng nhập tên mật khẩu dài 6-24 ký t?, v?i các ký t? ch? và s?, ch?u hoa và ch? th??ng! "); return; }
+            if (!checkAccount(tentk)) { MessageBox.Show("Vui lòng nhap tên tài khoan dài 6-24 ký tu, voi các ký tu chu và so, chu hoa và chu thuong! "); return; }
+            if (!checkAccount(matkhau)) { MessageBox.Show("Vui lòng nhập tên mật khẩu dài 6-24 ký t?, voi các ký tu chu và so, chu hoa và chu thuong! "); return; }
             if (xnmatkhau != matkhau) { MessageBox.Show("Vui lòng xác nhận mật khẩu chính xác!"); return; }
             if (!CheckEmail(email)) { MessageBox.Show("Vui lòng nhập đúng định dạng email!"); return; }
             if ((modify.TaiKhoans("select * from TaiKhoan where email = '" + email + "'").Count != 0))
@@ -68,6 +68,11 @@ namespace QL_DV_Bida
             {
                 e.Cancel = true;
             }
+        }
+
+        private void frmDangKi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -4,16 +4,19 @@
     <Compile Update="frmDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmDatBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="frmHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmDatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmOderDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmQuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

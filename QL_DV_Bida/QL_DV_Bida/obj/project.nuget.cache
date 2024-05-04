@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UTGEY7Z3co5o7WQe1cu4J859YPRWK+z2PvpxoxoPuIip+uW+e1v5H9V0vtZI+ZTXW5FtamkswrNuNkGzJEvJpw==",
+  "dgSpecHash": "dFcwQxdSCBzGObuZOmR1fAswMu0jNCCA8hBV6IZilD6QBELrzTS2MVefgTFJTAVlHRKLKpVwAUy9cL4DR0NG9g==",
   "success": true,
-  "projectFilePath": "D:\\Source_Code\\C#\\Do_an_WindownForm\\QL_DV_Bida\\QL_DV_Bida\\QL_DV_Bida.csproj",
+  "projectFilePath": "D:\\OneDrive\\Máy tính\\Quan_Ly_Dich_Vu_Bida\\QL_DV_Bida\\QL_DV_Bida\\GUI.csproj",
   "expectedPackageFiles": [
     "D:\\Download\\Program\\Program_Code\\DevEpress\\Components\\Offline Packages\\devexpress.charts\\21.2.6\\devexpress.charts.21.2.6.nupkg.sha512",
     "D:\\Download\\Program\\Program_Code\\DevEpress\\Components\\Offline Packages\\devexpress.charts.core\\21.2.6\\devexpress.charts.core.21.2.6.nupkg.sha512",
