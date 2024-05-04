@@ -38,6 +38,7 @@
             btn_DangNhap = new Button();
             check_DieuKhoan = new CheckBox();
             image_DangNhap = new PictureBox();
+            btnExit = new Button();
             ((System.ComponentModel.ISupportInitialize)picture_TaiKhoan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picture_MatKhau).BeginInit();
             ((System.ComponentModel.ISupportInitialize)image_DangNhap).BeginInit();
@@ -106,7 +107,7 @@
             // 
             // btn_DangNhap
             // 
-            btn_DangNhap.Location = new Point(191, 496);
+            btn_DangNhap.Location = new Point(110, 498);
             btn_DangNhap.Name = "btn_DangNhap";
             btn_DangNhap.Size = new Size(124, 45);
             btn_DangNhap.TabIndex = 4;
@@ -117,7 +118,7 @@
             // check_DieuKhoan
             // 
             check_DieuKhoan.AutoSize = true;
-            check_DieuKhoan.Location = new Point(126, 578);
+            check_DieuKhoan.Location = new Point(126, 622);
             check_DieuKhoan.Name = "check_DieuKhoan";
             check_DieuKhoan.Size = new Size(270, 24);
             check_DieuKhoan.TabIndex = 5;
@@ -134,12 +135,23 @@
             image_DangNhap.TabIndex = 0;
             image_DangNhap.TabStop = false;
             // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(272, 498);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(124, 45);
+            btnExit.TabIndex = 6;
+            btnExit.Text = "Thoát";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
             // frmDangNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(532, 693);
+            Controls.Add(btnExit);
             Controls.Add(check_DieuKhoan);
             Controls.Add(btn_DangNhap);
             Controls.Add(link_DangKy);
@@ -150,7 +162,9 @@
             Controls.Add(txtTaiKhoan);
             Controls.Add(image_DangNhap);
             Name = "frmDangNhap";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng nhập";
+            FormClosing += frmDangNhap_FormClosing;
             Load += frmDangNhap_Load;
             ((System.ComponentModel.ISupportInitialize)picture_TaiKhoan).EndInit();
             ((System.ComponentModel.ISupportInitialize)picture_MatKhau).EndInit();
@@ -169,5 +183,6 @@
         private Button btn_DangNhap;
         private CheckBox check_DieuKhoan;
         private PictureBox image_DangNhap;
+        private Button btnExit;
     }
 }

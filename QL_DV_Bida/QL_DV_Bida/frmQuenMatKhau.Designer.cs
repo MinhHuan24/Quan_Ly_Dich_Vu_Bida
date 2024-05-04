@@ -46,7 +46,6 @@
             label1.TabIndex = 0;
             label1.Text = "Email đăng ký:";
             label1.UseWaitCursor = true;
-            label1.Click += label1_Click;
             // 
             // txtEmailDangKy
             // 
@@ -57,7 +56,6 @@
             txtEmailDangKy.Size = new Size(296, 38);
             txtEmailDangKy.TabIndex = 1;
             txtEmailDangKy.UseWaitCursor = true;
-            txtEmailDangKy.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
@@ -69,7 +67,6 @@
             label2.TabIndex = 2;
             label2.Text = "Kết quả:";
             label2.UseWaitCursor = true;
-            label2.Click += label2_Click;
             // 
             // btnLayLaiMatKhau
             // 
@@ -86,9 +83,10 @@
             // 
             // image1
             // 
-            image1.BackgroundImageLayout = ImageLayout.None;
+            image1.BackgroundImageLayout = ImageLayout.Stretch;
             image1.BorderStyle = BorderStyle.FixedSingle;
             image1.Cursor = Cursors.WaitCursor;
+            image1.Image = Properties.Resources.qmk1;
             image1.Location = new Point(112, 52);
             image1.Margin = new Padding(3, 4, 3, 4);
             image1.Name = "image1";
@@ -97,7 +95,6 @@
             image1.TabIndex = 4;
             image1.TabStop = false;
             image1.UseWaitCursor = true;
-            image1.Click += pictureBox1_Click;
             // 
             // frmQuenMatKhau
             // 
@@ -112,6 +109,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmQuenMatKhau";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Quên mặt khẩu";
             UseWaitCursor = true;
             Load += frmQuenMatKhau_Load;

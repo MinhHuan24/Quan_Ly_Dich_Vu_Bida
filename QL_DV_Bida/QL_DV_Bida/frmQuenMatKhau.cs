@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QL_DV_Bida.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,7 @@ namespace QL_DV_Bida
             else
             {
                 string query = "Select * from Taikhoan where Email = '" + email + "'";
-                if (modify.TaiKhoans(query).Count != 0)
+                if (modify.TaiKhoans(query).Count!=0)
                 {
                     label2.ForeColor = Color.Blue;
                     label2.Text = "Mật khẩu: " + modify.TaiKhoans(query)[0].MatKhau;
@@ -41,27 +42,6 @@ namespace QL_DV_Bida
             }
 
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmQuenMatKhau_Load(object sender, EventArgs e)
         {
 

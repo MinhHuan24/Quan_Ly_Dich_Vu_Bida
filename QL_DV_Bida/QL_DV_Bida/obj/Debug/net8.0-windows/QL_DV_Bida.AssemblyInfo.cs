@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QL_DV_Bida")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3add9adfb9f4441dc1042c850c09ca9bbd38be8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("QL_DV_Bida")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QL_DV_Bida")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
